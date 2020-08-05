@@ -14,8 +14,7 @@ export const Container = styled.div`
   padding: 1rem 2rem;
   align-items: center;
   background: #7159c1;
-
-  height: 7.5rem;
+  height: 5.5rem;
 `;
 
 export const HeaderContent = styled.header`
@@ -23,17 +22,16 @@ export const HeaderContent = styled.header`
   justify-content: space-between;
   align-items: center;
 
-  img {
-    width: 5.5rem;
-    height: 5.5rem;
-    border-radius: 50%;
+  h1 {
+    color: #ffff;
+    font-size: 1.5rem;
   }
 
  div {
    align-items: center;
    display: flex;
 
-  .user_profile {
+  img {
     width: 3.5rem;
     height: 3.5rem;
     border-radius: 50%;
@@ -48,7 +46,6 @@ export const HeaderContent = styled.header`
     margin-left: 1rem;
     color: #ffff;
   }
-  
- }
+}
 `;
 
