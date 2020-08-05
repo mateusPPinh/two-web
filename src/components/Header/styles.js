@@ -11,10 +11,8 @@ const userAnimation = keyframes`
 `;
 
 export const Container = styled.div`
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   align-items: center;
-  background: #7159c1;
-  height: 5.5rem;
 `;
 
 export const HeaderContent = styled.header`
@@ -23,7 +21,7 @@ export const HeaderContent = styled.header`
   align-items: center;
 
   h1 {
-    color: #ffff;
+    color: #333;
     font-size: 1.5rem;
   }
 
@@ -35,7 +33,7 @@ export const HeaderContent = styled.header`
     width: 3.5rem;
     height: 3.5rem;
     border-radius: 50%;
-    border: 2px solid #ffff;
+    border: 2px solid #333;
 
     &:hover {
       animation: ${userAnimation} 0.2s linear;
@@ -44,7 +42,7 @@ export const HeaderContent = styled.header`
 
   strong {
     margin-left: 1rem;
-    color: #ffff;
+    color: #333;
   }
 }
 `;

@@ -1,12 +1,20 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  width: 100%;
+  margin: 50px auto;
+  padding: 95px;
+  max-width: 1300px;
+  background: #ffff;
+  border-radius: 8px;
 `;
 
-export const SectionTitle = styled.h2`
-  padding: 1rem 2rem;
-  width: 30rem;
-  line-height: 2.5rem;
-  font-size: 2rem;
+export const SectionContainer = styled.div`
+  padding: 1rem;
+  width: 20rem;
+  margin-top: 2rem;
+
+  h2 {
+    font-size: 2rem;
+    color: #333;
+  }
 `;

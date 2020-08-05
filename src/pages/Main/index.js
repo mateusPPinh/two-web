@@ -1,7 +1,6 @@
 import React from "react";
 
-import { Container, SectionTitle } from './styles';
-
+import { Container, SectionContainer } from './styles';
 import HeaderComponent from '../../components/Header';
 
 export default function Main() {
@@ -9,9 +8,9 @@ export default function Main() {
     <Container>
       <HeaderComponent />
 
-      <SectionTitle>
-        O que você deseja fazer, Maria?
-      </SectionTitle>
+      <SectionContainer>
+        <h2>O que você deseja fazer?</h2>
+      </SectionContainer>
     </Container>
   );
 }

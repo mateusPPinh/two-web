@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <Container>
       <HeaderContent>
-        <h1>DASHBOARD</h1>
+        <h1>dash | board</h1>
 
         <div>
           <img

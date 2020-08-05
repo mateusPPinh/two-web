@@ -11,6 +11,7 @@ export default createGlobalStyle`
   body {
     -webkit-font-smoothing: antialiased;
     font-family: 'Recursive', sans-serif;
+    background: #FECEA2;
   }
 
   html, body, #root {
