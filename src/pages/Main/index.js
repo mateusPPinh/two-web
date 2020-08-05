@@ -95,6 +95,44 @@ export default function Main() {
               autoComplete="false"
             />
           </div>
+
+          <legend>
+            <p>Dados secundários(Opcional)</p>
+          </legend>
+
+          <input
+            type="text"
+            placeholder="Endereço Alternativo"
+            autoComplete="false"
+          />
+
+          <input
+            type="email"
+            placeholder="Rua"
+            autoComplete="false"
+          />
+
+          <div className="field_group">
+            <input
+              type="text"
+              placeholder="Telefone"
+              autoComplete="false"
+            />
+
+            <input
+              type="text"
+              placeholder="Número"
+              autoComplete="false"
+            />
+
+            <input
+              type="text"
+              placeholder="Complemento"
+              autoComplete="false"
+            />
+          </div>
+
+          <button type="button">Salvar novo usuário</button>
         </form>
       </RegisterUser>
     </Container>

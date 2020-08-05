@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { shade } from 'polished';
 
 export const Container = styled.div`
   margin: 50px auto;
@@ -30,6 +31,10 @@ export const RegisterUser = styled.div`
     flex-direction: column;
     padding-bottom: 2rem;
 
+    p {
+      margin-bottom: 1rem;
+    }
+
     h3 {
       margin-bottom: 0.5rem;
       font-size: 1rem;
@@ -53,6 +58,22 @@ export const RegisterUser = styled.div`
 
       &::placeholder {
         font-size: 0.90rem;
+      }
+    }
+
+    button {
+      margin-top: 1rem;
+      height: 3.5rem;
+      background: #7159c1;
+      border: 0;
+      border-radius: 0.5rem;
+      color: #ffff;
+      font-size: 1rem;
+      font-weight: bold;
+      transition: background 0.2s;
+
+      &:hover {
+        background: ${shade(0.1, '#7159c1')};
       }
     }
   }
