@@ -48,6 +48,53 @@ export default function Main() {
               autoComplete="false"
             />
           </div>
+
+          <input
+            type="text"
+            placeholder="Endereço"
+            autoComplete="false"
+          />
+
+          <div className="field_group">
+            <input
+              type="text"
+              placeholder="Cidade"
+              autoComplete="false"
+            />
+
+            <input
+              type="text"
+              placeholder="Estado"
+              maxLength="2"
+              autoComplete="false"
+            />
+
+            <input
+              type="text"
+              placeholder="Bairro"
+              autoComplete="false"
+            />
+          </div>
+
+          <div className="field_group">
+            <input
+              type="text"
+              placeholder="Rua"
+              autoComplete="false"
+            />
+
+            <input
+              type="text"
+              placeholder="Número"
+              autoComplete="false"
+            />
+
+            <input
+              type="text"
+              placeholder="Complemento"
+              autoComplete="false"
+            />
+          </div>
         </form>
       </RegisterUser>
     </Container>

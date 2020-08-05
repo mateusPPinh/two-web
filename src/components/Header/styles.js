@@ -1,14 +1,4 @@
-import styled, { keyframes } from 'styled-components';
-
-const userAnimation = keyframes`
-  from {
-    transform: translateY(2em)
-  }
-
-  to {
-    transform: translate(0px);
-  }
-`;
+import styled from 'styled-components';
 
 export const Container = styled.div`
   padding: 1rem 1rem;
@@ -28,15 +18,21 @@ export const HeaderContent = styled.header`
  div {
    align-items: center;
    display: flex;
+   transition: transform 0.2s;
+
+   &:hover {
+      transform: translateX(1rem);
+    }
 
   img {
     width: 3.5rem;
     height: 3.5rem;
     border-radius: 50%;
     border: 2px solid #333;
+    transition: border-radius 0.2s;
 
     &:hover {
-      animation: ${userAnimation} 0.2s linear;
+      border-radius: 40%;
     }
   }
 
