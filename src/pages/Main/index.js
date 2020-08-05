@@ -1,11 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { Container, SectionContainer, RegisterUser } from './styles';
+
 import HeaderComponent from '../../components/Header';
+import MessageOk from '../../components/SuccessInfo';
 
 export default function Main() {
+  const [success, setSuccess] = useState(false);
+
+  function handleSuccessMessage() {
+    setSuccess(true);
+
+    setTimeout(() => {
+      setSuccess(false);
+    }, 10000)
+  }
+
   return (
     <Container>
+      {
+        success && (
+          <MessageOk />
+        )
+      }
       <HeaderComponent />
 
       <SectionContainer>
@@ -16,7 +33,7 @@ export default function Main() {
         <legend>
           <p>Dados necessários</p>
         </legend>
-        <form>
+        <form onSubmit={handleSuccessMessage}>
           <input
             type="text"
             placeholder="Nome completo"
@@ -132,7 +149,7 @@ export default function Main() {
             />
           </div>
 
-          <button type="button">Salvar novo usuário</button>
+          <button type="submit">Salvar novo usuário</button>
         </form>
       </RegisterUser>
     </Container>
