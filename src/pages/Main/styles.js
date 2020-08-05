@@ -28,11 +28,17 @@ export const RegisterUser = styled.div`
     display: flex;
     max-width: 40rem;
     flex-direction: column;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
 
     h3 {
       margin-bottom: 0.5rem;
       font-size: 1rem;
+    }
+
+    .field_group {
+      flex: 1;
+      display: flex;
+      justify-content: space-between;
     }
 
     input {
@@ -41,11 +47,12 @@ export const RegisterUser = styled.div`
       background: rgba(3, 3, 3, 0.1);
       border: none;
       border-radius: 0.8rem;
-      font-size: 1rem;
+      font-size: 0.90rem;
+      caret-color: #333;
+      margin-bottom: 1rem;
 
       &::placeholder {
-        font-size: 1rem;
-        color: #333;
+        font-size: 0.90rem;
       }
     }
   }

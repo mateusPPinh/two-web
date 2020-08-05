@@ -25,4 +25,8 @@ export default createGlobalStyle`
   a {
     text-decoration: none;
   }
+
+  button, input {
+    font: Recursive 0.90rem;
+  }
 `;

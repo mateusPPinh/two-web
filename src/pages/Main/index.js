@@ -17,26 +17,37 @@ export default function Main() {
           <p>Dados necessários</p>
         </legend>
         <form>
-          <h3>Nome completo</h3>
           <input
             type="text"
-            placeholder="E-mail"
+            placeholder="Nome completo"
             autoComplete="false"
           />
 
-          <h3>CPF</h3>
           <input
-            type="text"
-            placeholder="E-mail"
+            type="email"
+            placeholder="Melhor e-mail"
             autoComplete="false"
           />
 
-          <h3>Telefone</h3>
-          <input
-            type="text"
-            placeholder="E-mail"
-            autoComplete="false"
-          />
+          <div className="field_group">
+            <input
+              type="number"
+              placeholder="CPF"
+              autoComplete="false"
+            />
+
+            <input
+              type="number"
+              placeholder="Telefone"
+              autoComplete="false"
+            />
+
+            <input
+              type="number"
+              placeholder="CEP"
+              autoComplete="false"
+            />
+          </div>
         </form>
       </RegisterUser>
     </Container>
