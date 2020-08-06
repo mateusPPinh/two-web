@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { shade } from 'polished';
 
 export const Container = styled.div`
   padding: 1rem 1rem;
@@ -9,6 +10,32 @@ export const HeaderContent = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  a {
+    display: flex;
+    align-items: center;
+    color: #333;
+    background: #7159c1;
+    height: 3rem;
+    width: 10rem;
+    justify-content: center;
+    color: #fff;
+    border-radius: 0.5rem;
+    transition: background 0.2s;
+
+    &:hover {
+      background: ${shade(0.1, '#7159c1')};
+    }
+  }
+
+  .header_info {
+    display: flex;
+    align-items: center;
+
+    strong {
+      margin-right: 2rem;
+    }
+  }
 
   h1 {
     color: #333;

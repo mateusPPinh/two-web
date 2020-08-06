@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
+import { FiUser } from 'react-icons/fi';
 
 import { Container, HeaderContent } from "./styles";
 
@@ -8,6 +9,9 @@ export default function Header() {
     <Container>
       <HeaderContent>
         <h1>dash | board</h1>
+        <a href="/">
+          Alterar Usuários
+        </a>
 
         <div>
           <img
