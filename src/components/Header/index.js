@@ -1,17 +1,30 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
-import { FiUser } from 'react-icons/fi';
+import { Link, useHistory } from 'react-router-dom';
 
 import { Container, HeaderContent } from "./styles";
 
 export default function Header() {
+
+  const history = useHistory();
+  const { pathname } = history.location;
+
   return (
     <Container>
       <HeaderContent>
         <h1>dash | board</h1>
-        <a href="/">
-          Alterar Usuários
-        </a>
+
+        {pathname !== '/dashboard-configurations' && (
+          <Link to="/dashboard-configurations">
+            Alterar Usuários
+          </Link>
+        )}
+
+        {pathname !== '/' && (
+          <Link to="/">
+            Voltar
+          </Link>
+        )}
 
         <div>
           <img
